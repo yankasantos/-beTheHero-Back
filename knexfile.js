@@ -1,12 +1,30 @@
 // Update with your config settings.
-
+/**
+ * Entidade:
+ * ong
+ * incidents
+ * 
+ * Funcionalidades:
+ * Login ong
+ * Logout ong
+ * cadastro ong
+ * cadastro incident
+ * deletar incident
+ * listar incident expecifico da ong logada
+ * listar todos os casos
+ * entrar em contato via wpp e email
+ */
 module.exports = {
 
   development: {
     client: 'sqlite3',
     connection: {
       filename: './src/database/db.sqlite'
-    }
+    },
+    migrations:{
+      directory:'./src/database/migrations'
+    },
+    useNullAsDefault:true,
   },
 
   staging: {
