@@ -24,5 +24,24 @@ module.exports = {
 
         return response.json({ id });
         
-    }
+    },
+
+    // async delete(request, response){
+    //     const id_autenticaded = request.params;
+        
+
+    //     const incidentToDelete = await connection('ongs')
+    //     .where('id_autenticaded')
+    //     .select('id')
+    //     .first();
+
+    //     if(incidentToDelete.id != id_autenticaded){
+    //         return response.status(401).json({error:'operation not permitted.'});
+    //     }
+
+    //     await connection('incidentes').where('id', id).delete();
+
+    //     return response.status(204).send();
+
+    // }
 };
